@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FESTSPIRIT 2025 | Festival de Música y Conciencia | Nuevo Baztán</title>
+    <meta name="description" content="FESTSPIRIT 2025 - Festival de música y conciencia el 6 de septiembre en La Encina Kalima, Nuevo Baztán. Artistas: TARQ BOWEN, LUCAS PEZ MAGO, AITOR CASTELLS & CIA, JANUMAN">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        border: "hsl(217.2 32.6% 17.5%)",
+                        input: "hsl(217.2 32.6% 17.5%)",
+                        ring: "hsl(212.7 26.8% 83.9%)",
+                        background: "hsl(222.2 84% 4.9%)",
+                        foreground: "hsl(210 40% 98%)",
+                        primary: {
+                            DEFAULT: "hsl(210 40% 98%)",
+                            foreground: "hsl(222.2 84% 4.9%)"
+                        },
+                        secondary: {
+                            DEFAULT: "hsl(217.2 32.6% 17.5%)",
+                            foreground: "hsl(210 40% 98%)"
+                        },
+                        muted: {
+                            DEFAULT: "hsl(217.2 32.6% 17.5%)",
+                            foreground: "hsl(215 20.2% 65.1%)"
+                        },
+                        accent: {
+                            DEFAULT: "hsl(217.2 32.6% 17.5%)",
+                            foreground: "hsl(210 40% 98%)"
+                        },
+                        card: {
+                            DEFAULT: "hsl(222.2 84% 4.9%)",
+                            foreground: "hsl(210 40% 98%)"
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: hsl(222.2 84% 4.9%);
+            color: hsl(210 40% 98%);
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, hsl(222.2 84% 4.9%) 0%, hsl(217.2 32.6% 17.5%) 100%);
+        }
+        .glow {
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+        }
+        .artist-card {
+            background: linear-gradient(145deg, hsl(217.2 32.6% 17.5%), hsl(222.2 84% 4.9%));
+            border: 1px solid hsl(217.2 32.6% 17.5%);
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, hsl(210 40% 98%), hsl(215 20.2% 65.1%));
+            color: hsl(222.2 84% 4.9%);
+        }
+        .btn-primary:hover {
+            background: linear-gradient(135deg, hsl(215 20.2% 65.1%), hsl(210 40% 98%));
+        }
+    </style>
+</head>
+<body class="min-h-screen gradient-bg">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-black/90 backdrop-blur-sm border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-white">FESTSPIRIT</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#inicio" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Inicio</a>
+                        <a href="#artistas" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Artistas</a>
+                        <a href="#programa" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Programa</a>
+                        <a href="#entradas" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Entradas</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <button onclick="toggleLanguage()" class="bg-gray-700 text-white px-3 py-1 rounded text-sm font-medium hover:bg-gray-600 transition-colors">
+                        <span id="lang-toggle">EN</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-20 pb-16 px-4 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+                FESTSPIRIT
+            </h1>
+            <h2 class="text-3xl md:text-5xl font-light mb-8 text-gray-300">
+                <span data-es="2025">2025</span>
+            </h2>
+            <div class="text-xl md:text-2xl mb-12 text-gray-400 space-y-2">
+                <p data-es="Festival de Música y Conciencia" data-en="Music and Consciousness Festival">
+                    Festival de Música y Conciencia
+                </p>
+                <p class="text-lg">
+                    <span data-es="6 de Septiembre • La Encina Kalima • Nuevo Baztán" data-en="September 6th • La Encina Kalima • Nuevo Baztán">
+                        6 de Septiembre • La Encina Kalima • Nuevo Baztán
+                    </span>
+                </p>
+            </div>
+            <button class="btn-primary px-8 py-4 rounded-full text-lg font-semibold hover:scale-105 transition-transform">
+                <span data-es="Comprar Entradas €40.56" data-en="Buy Tickets €40.56">Comprar Entradas €40.56</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Artists Section -->
+    <section id="artistas" class="py-16 px-4">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">
+                <span data-es="Artistas" data-en="Artists">Artistas</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- TARQ BOWEN -->
+                <div class="artist-card rounded-lg p-6 glow hover:scale-105 transition-transform">
+                    <div class="aspect-square bg-gray-700 rounded-lg mb-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600" 
+                             alt="TARQ BOWEN" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">TARQ BOWEN</h3>
+                    <p class="text-gray-400 mb-4">Electronic / Ambient</p>
+                    <div class="flex space-x-3 mb-4">
+                        <a href="https://open.spotify.com/artist/tarqbowen" class="text-green-400 hover:text-green-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.859-.179-.98-.599-.122-.421.18-.861.599-.98 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02l.022.14zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.32 11.28-1.08 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+                            </svg>
+                        </a>
+                        <a href="https://youtube.com/@tarqbowen" class="text-red-400 hover:text-red-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="text-sm text-gray-400" data-es="Productor de música electrónica experimental que fusiona sonidos ambientales con beats contemporáneos." data-en="Experimental electronic music producer who fuses ambient sounds with contemporary beats.">
+                        Productor de música electrónica experimental que fusiona sonidos ambientales con beats contemporáneos.
+                    </p>
+                </div>
+
+                <!-- LUCAS PEZ MAGO -->
+                <div class="artist-card rounded-lg p-6 glow hover:scale-105 transition-transform">
+                    <div class="aspect-square bg-gray-700 rounded-lg mb-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600" 
+                             alt="LUCAS PEZ MAGO" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">LUCAS PEZ MAGO</h3>
+                    <p class="text-gray-400 mb-4">Folk / World</p>
+                    <div class="flex space-x-3 mb-4">
+                        <a href="https://open.spotify.com/artist/lucaspezmago" class="text-green-400 hover:text-green-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.859-.179-.98-.599-.122-.421.18-.861.599-.98 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02l.022.14zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.32 11.28-1.08 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+                            </svg>
+                        </a>
+                        <a href="https://soundcloud.com/lucaspezmago" class="text-orange-400 hover:text-orange-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M1.175 12.225c-.051 0-.094.046-.101.1l-.233 2.154.233 2.105c.007.058.05.098.101.098.05 0 .09-.04.099-.098l.255-2.105-.255-2.154c-.009-.054-.049-.1-.099-.1zm1.49.047c-.058 0-.102.046-.113.105l-.196 2.107.196 2.013c.011.06.055.098.113.098.057 0 .102-.039.113-.098l.217-2.013-.217-2.107c-.011-.059-.056-.105-.113-.105zm1.455.053c-.064 0-.116.049-.127.117l-.18 2.054.18 1.968c.011.068.063.115.127.115.064 0 .115-.047.127-.115l.201-1.968-.201-2.054c-.012-.068-.063-.117-.127-.117zm1.456.056c-.073 0-.132.055-.143.127l-.164 1.997.164 1.92c.011.072.07.125.143.125.072 0 .132-.053.143-.125l.184-1.92-.184-1.997c-.011-.072-.071-.127-.143-.127zm1.461.059c-.081 0-.146.061-.158.139l-.145 1.938.145 1.873c.012.078.077.137.158.137.08 0 .146-.059.159-.137l.163-1.873-.163-1.938c-.013-.078-.079-.139-.159-.139zm1.467.062c-.088 0-.159.066-.172.15l-.129 1.879.129 1.826c.013.084.084.148.172.148.087 0 .158-.064.172-.148l.144-1.826-.144-1.879c-.014-.084-.085-.15-.172-.15zm1.471.066c-.095 0-.171.071-.185.161l-.111 1.818.111 1.78c.014.09.09.159.185.159.094 0 .170-.069.185-.159l.125-1.78-.125-1.818c-.015-.09-.091-.161-.185-.161zm1.476.069c-.103 0-.185.076-.202.175l-.094 1.756.094 1.733c.017.099.099.173.202.173.102 0 .184-.074.202-.173l.106-1.733-.106-1.756c-.018-.099-.1-.175-.202-.175zm1.481.072c-.111 0-.2.081-.219.189l-.078 1.693.078 1.686c.019.108.108.187.219.187.11 0 .199-.079.219-.187l.087-1.686-.087-1.693c-.02-.108-.109-.189-.219-.189zm1.484.075c-.118 0-.213.087-.233.198l-.063 1.63.063 1.64c.02.111.115.196.233.196.117 0 .212-.085.233-.196l.07-1.64-.07-1.63c-.021-.111-.116-.198-.233-.198zm1.488.078c-.125 0-.225.092-.247.207l-.047 1.567.047 1.594c.022.115.122.205.247.205.124 0 .224-.09.247-.205l.053-1.594-.053-1.567c-.023-.115-.123-.207-.247-.207zm1.493.081c-.133 0-.239.097-.262.22l-.031 1.504.031 1.547c.023.123.129.218.262.218.132 0 .238-.095.262-.218l.035-1.547-.035-1.504c-.024-.123-.13-.22-.262-.22zm1.497.084c-.14 0-.252.103-.277.234l-.016 1.441.016 1.501c.025.131.137.232.277.232.139 0 .251-.101.277-.232l.018-1.501-.018-1.441c-.026-.131-.138-.234-.277-.234zm1.5.087c-.148 0-.266.108-.293.246V12c0 .138.145.245.293.245.147 0 .265-.107.293-.245v-.001c-.028-.138-.146-.246-.293-.246z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="text-sm text-gray-400" data-es="Músico folk que combina tradiciones españolas con sonidos del mundo, creando paisajes sonoros únicos." data-en="Folk musician who combines Spanish traditions with world sounds, creating unique soundscapes.">
+                        Músico folk que combina tradiciones españolas con sonidos del mundo, creando paisajes sonoros únicos.
+                    </p>
+                </div>
+
+                <!-- AITOR CASTELLS & CIA -->
+                <div class="artist-card rounded-lg p-6 glow hover:scale-105 transition-transform">
+                    <div class="aspect-square bg-gray-700 rounded-lg mb-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600" 
+                             alt="AITOR CASTELLS & CIA" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">AITOR CASTELLS & CIA</h3>
+                    <p class="text-gray-400 mb-4">Jazz / Fusion</p>
+                    <div class="flex space-x-3 mb-4">
+                        <a href="https://open.spotify.com/artist/aitorcastells" class="text-green-400 hover:text-green-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.859-.179-.98-.599-.122-.421.18-.861.599-.98 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02l.022.14zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.32 11.28-1.08 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+                            </svg>
+                        </a>
+                        <a href="https://youtube.com/@aitorcastellscia" class="text-red-400 hover:text-red-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="text-sm text-gray-400" data-es="Colectivo de jazz fusion que experimenta con ritmos complejos y improvisación contemporánea." data-en="Jazz fusion collective that experiments with complex rhythms and contemporary improvisation.">
+                        Colectivo de jazz fusion que experimenta con ritmos complejos y improvisación contemporánea.
+                    </p>
+                </div>
+
+                <!-- JANUMAN -->
+                <div class="artist-card rounded-lg p-6 glow hover:scale-105 transition-transform">
+                    <div class="aspect-square bg-gray-700 rounded-lg mb-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600" 
+                             alt="JANUMAN" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">JANUMAN</h3>
+                    <p class="text-gray-400 mb-4">World / Spiritual</p>
+                    <div class="flex space-x-3 mb-4">
+                        <a href="https://open.spotify.com/artist/januman" class="text-green-400 hover:text-green-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.859-.179-.98-.599-.122-.421.18-.861.599-.98 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02l.022.14zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.32 11.28-1.08 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+                            </svg>
+                        </a>
+                        <a href="https://soundcloud.com/januman" class="text-orange-400 hover:text-orange-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M1.175 12.225c-.051 0-.094.046-.101.1l-.233 2.154.233 2.105c.007.058.05.098.101.098.05 0 .09-.04.099-.098l.255-2.105-.255-2.154c-.009-.054-.049-.1-.099-.1zm1.49.047c-.058 0-.102.046-.113.105l-.196 2.107.196 2.013c.011.06.055.098.113.098.057 0 .102-.039.113-.098l.217-2.013-.217-2.107c-.011-.059-.056-.105-.113-.105zm1.455.053c-.064 0-.116.049-.127.117l-.18 2.054.18 1.968c.011.068.063.115.127.115.064 0 .115-.047.127-.115l.201-1.968-.201-2.054c-.012-.068-.063-.117-.127-.117zm1.456.056c-.073 0-.132.055-.143.127l-.164 1.997.164 1.92c.011.072.07.125.143.125.072 0 .132-.053.143-.125l.184-1.92-.184-1.997c-.011-.072-.071-.127-.143-.127zm1.461.059c-.081 0-.146.061-.158.139l-.145 1.938.145 1.873c.012.078.077.137.158.137.08 0 .146-.059.159-.137l.163-1.873-.163-1.938c-.013-.078-.079-.139-.159-.139zm1.467.062c-.088 0-.159.066-.172.15l-.129 1.879.129 1.826c.013.084.084.148.172.148.087 0 .158-.064.172-.148l.144-1.826-.144-1.879c-.014-.084-.085-.15-.172-.15zm1.471.066c-.095 0-.171.071-.185.161l-.111 1.818.111 1.78c.014.09.09.159.185.159.094 0 .170-.069.185-.159l.125-1.78-.125-1.818c-.015-.09-.091-.161-.185-.161zm1.476.069c-.103 0-.185.076-.202.175l-.094 1.756.094 1.733c.017.099.099.173.202.173.102 0 .184-.074.202-.173l.106-1.733-.106-1.756c-.018-.099-.1-.175-.202-.175zm1.481.072c-.111 0-.2.081-.219.189l-.078 1.693.078 1.686c.019.108.108.187.219.187.11 0 .199-.079.219-.187l.087-1.686-.087-1.693c-.02-.108-.109-.189-.219-.189zm1.484.075c-.118 0-.213.087-.233.198l-.063 1.63.063 1.64c.02.111.115.196.233.196.117 0 .212-.085.233-.196l.07-1.64-.07-1.63c-.021-.111-.116-.198-.233-.198zm1.488.078c-.125 0-.225.092-.247.207l-.047 1.567.047 1.594c.022.115.122.205.247.205.124 0 .224-.09.247-.205l.053-1.594-.053-1.567c-.023-.115-.123-.207-.247-.207zm1.493.081c-.133 0-.239.097-.262.22l-.031 1.504.031 1.547c.023.123.129.218.262.218.132 0 .238-.095.262-.218l.035-1.547-.035-1.504c-.024-.123-.13-.22-.262-.22zm1.497.084c-.14 0-.252.103-.277.234l-.016 1.441.016 1.501c.025.131.137.232.277.232.139 0 .251-.101.277-.232l.018-1.501-.018-1.441c-.026-.131-.138-.234-.277-.234zm1.5.087c-.148 0-.266.108-.293.246V12c0 .138.145.245.293.245.147 0 .265-.107.293-.245v-.001c-.028-.138-.146-.246-.293-.246z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="text-sm text-gray-400" data-es="Artista espiritual que fusiona mantras tradicionales con instrumentos del mundo para crear experiencias transformadoras." data-en="Spiritual artist who fuses traditional mantras with world instruments to create transformative experiences.">
+                        Artista espiritual que fusiona mantras tradicionales con instrumentos del mundo para crear experiencias transformadoras.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="programa" class="py-16 px-4 bg-black/50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">
+                <span data-es="Programa" data-en="Schedule">Programa</span>
+            </h2>
+            <div class="space-y-6">
+                <div class="bg-gray-800 rounded-lg p-6 flex items-center justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2" data-es="Apertura y Bienvenida" data-en="Opening & Welcome">Apertura y Bienvenida</h3>
+                        <p class="text-gray-400" data-es="Ceremonia de apertura con introducción al festival y conexión con la naturaleza" data-en="Opening ceremony with festival introduction and connection with nature">
+                            Ceremonia de apertura con introducción al festival y conexión con la naturaleza
+                        </p>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-2xl font-bold">10:00</p>
+                        <p class="text-gray-400">12:00</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg p-6 flex items-center justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">TARQ BOWEN</h3>
+                        <p class="text-gray-400" data-es="Set de música electrónica experimental" data-en="Experimental electronic music set">
+                            Set de música electrónica experimental
+                        </p>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-2xl font-bold">12:30</p>
+                        <p class="text-gray-400">14:00</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg p-6 flex items-center justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">LUCAS PEZ MAGO</h3>
+                        <p class="text-gray-400" data-es="Música folk y world con instrumentos tradicionales" data-en="Folk and world music with traditional instruments">
+                            Música folk y world con instrumentos tradicionales
+                        </p>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-2xl font-bold">15:00</p>
+                        <p class="text-gray-400">16:30</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg p-6 flex items-center justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">AITOR CASTELLS & CIA</h3>
+                        <p class="text-gray-400" data-es="Jazz fusion contemporáneo y improvisación" data-en="Contemporary jazz fusion and improvisation">
+                            Jazz fusion contemporáneo y improvisación
+                        </p>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-2xl font-bold">17:30</p>
+                        <p class="text-gray-400">19:00</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg p-6 flex items-center justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">JANUMAN</h3>
+                        <p class="text-gray-400" data-es="Mantras y música espiritual para cerrar el festival" data-en="Mantras and spiritual music to close the festival">
+                            Mantras y música espiritual para cerrar el festival
+                        </p>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-2xl font-bold">20:00</p>
+                        <p class="text-gray-400">22:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tickets Section -->
+    <section id="entradas" class="py-16 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-8">
+                <span data-es="Entradas" data-en="Tickets">Entradas</span>
+            </h2>
+            <div class="bg-gray-800 rounded-lg p-8 mb-8">
+                <h3 class="text-3xl font-bold mb-4">€40.56</h3>
+                <p class="text-xl mb-6" data-es="Entrada General" data-en="General Admission">Entrada General</p>
+                <ul class="text-left space-y-2 mb-8">
+                    <li class="flex items-center">
+                        <span class="text-green-400 mr-2">✓</span>
+                        <span data-es="Acceso a todos los conciertos" data-en="Access to all concerts">Acceso a todos los conciertos</span>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-green-400 mr-2">✓</span>
+                        <span data-es="Actividades de conciencia y meditación" data-en="Consciousness and meditation activities">Actividades de conciencia y meditación</span>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-green-400 mr-2">✓</span>
+                        <span data-es="Área de food trucks locales" data-en="Local food truck area">Área de food trucks locales</span>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-green-400 mr-2">✓</span>
+                        <span data-es="Parking gratuito" data-en="Free parking">Parking gratuito</span>
+                    </li>
+                </ul>
+                <button class="btn-primary px-8 py-4 rounded-full text-lg font-semibold hover:scale-105 transition-transform w-full">
+                    <span data-es="Comprar Entrada" data-en="Buy Ticket">Comprar Entrada</span>
+                </button>
+            </div>
+            
+            <div class="bg-gray-900 rounded-lg p-6">
+                <h3 class="text-2xl font-bold mb-4">
+                    <span data-es="Información del Venue" data-en="Venue Information">Información del Venue</span>
+                </h3>
+                <div class="grid md:grid-cols-2 gap-6 text-left">
+                    <div>
+                        <h4 class="font-bold mb-2" data-es="Ubicación" data-en="Location">Ubicación</h4>
+                        <p class="text-gray-400">La Encina Kalima</p>
+                        <p class="text-gray-400">Nuevo Baztán, Madrid</p>
+                        <p class="text-gray-400" data-es="España" data-en="Spain">España</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-2" data-es="Contacto" data-en="Contact">Contacto</h4>
+                        <p class="text-gray-400">info@festspirit.es</p>
+                        <p class="text-gray-400">+34 600 000 000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-8 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-2xl font-bold mb-4">FESTSPIRIT 2025</h3>
+            <p class="text-gray-400 mb-4" data-es="Festival de Música y Conciencia" data-en="Music and Consciousness Festival">
+                Festival de Música y Conciencia
+            </p>
+            <p class="text-gray-500">© 2025 FESTSPIRIT. <span data-es="Todos los derechos reservados." data-en="All rights reserved.">Todos los derechos reservados.</span></p>
+        </div>
+    </footer>
+
+    <script>
+        let currentLang = 'es';
+        
+        function toggleLanguage() {
+            const newLang = currentLang === 'es' ? 'en' : 'es';
+            const elements = document.querySelectorAll('[data-' + newLang + ']');
+            
+            elements.forEach(el => {
+                const text = el.getAttribute('data-' + newLang);
+                if (text) {
+                    el.textContent = text;
+                }
+            });
+            
+            currentLang = newLang;
+            document.getElementById('lang-toggle').textContent = currentLang === 'es' ? 'EN' : 'ES';
+            document.documentElement.lang = currentLang;
+        }
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
